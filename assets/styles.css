@@ -1,0 +1,311 @@
+
+:root {
+    --dark: #142029;
+    --light: #eeebeb;
+    --lightblue: #8ecbcb;
+    --darkblue: #222a31;
+  }
+  
+  body {
+    flex-wrap: wrap;
+  }
+  .site-header{
+    position:relative;
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: var(--light);
+    height: 100%;
+    width: 100%;
+    line-height: 5px;
+    background-color: #222a31;
+    z-index:1;
+  }
+  
+  h2 {
+    color:#222a31;
+    background-color: var(--lightblue);
+    padding: 20px;
+  }
+  
+  /* Nav bar for site */
+  
+  .container {
+    justify-content: center;
+  }
+  
+  .hero-container {
+    position:relative;
+    display: flex;
+  
+  }
+  
+  .image-overlay {
+    position: absolute;
+    z-index: 1;
+    bottom: 8%;
+    right: 6%;
+    background-color: var(--lightblue);
+    color: var(--darkblue);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+  }
+   
+  main {
+    background-color: rgb(233, 239, 241);
+  }
+    
+  li {
+    display: inline-flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-self: 30px;
+    text-decoration: none;
+  }
+    
+  a {
+    text-decoration: underline;
+    color: var(--lightblue);
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 1%;
+    grid-auto-rows: minmax(100px, auto);
+    color: var(--darkblue) ;
+  }
+  
+  figure {
+    margin: 0;
+    position: relative;
+    justify-content: left;
+  }
+  
+  .grid {
+    z-index: 1;
+    position: absolute;
+    color: var(--darkblue);
+    font-weight: bold;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin:0;
+    background-color: var(--lightblue);
+  }
+  
+  .about-me {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    padding: 2%;
+    border-right-style: solid;
+    font-size: 40px;
+    text-align: right;
+  }
+  .description {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    padding: 2%;
+    
+  }
+  .work {
+    grid-column: 1;
+    grid-row: 3 / 7;
+    padding: 2%;
+    border-right-style: solid;
+    font-size: 40px;
+    text-align: right;
+  }
+  .surfsup {
+    grid-column: 2 / 4;
+    grid-row: 3 / 5;
+    border: solid;
+    border-color: var(--lightblue);
+    background-image:url(./surfsup.png) ;
+  }
+  
+  .surfsup:hover{
+    filter: drop-shadow(16px 16px 20px red) invert(75%);
+  }
+  
+  .image-overlay1 {
+    position: absolute;
+    z-index: 2;
+    top: 7em;
+    left: 0;
+    background-color: var(--lightblue);
+    color: var(--darkblue);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+  }
+  
+  .image-title {
+    font-size: 1.5em;
+  }
+  
+  .image-description {
+    font-size: .75em;
+    margin-top: .25em;
+  }
+  
+  .led-wall {
+    grid-column: 2;
+    grid-row: 5;
+    border: solid;
+    border-color: var(--lightblue);
+    background-image:url(./Ivy.png) ;
+  }
+  .led-wall:hover{
+    filter: drop-shadow(16px 16px 20px red) invert(75%);
+  }
+  
+  .image-overlay2 {
+    position: absolute;
+    z-index: 2;
+    top: 1em;
+    left: 0;
+    background-color: var(--lightblue);
+    color: var(--darkblue);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+  }
+  
+  
+  .calculator {
+    grid-column: 3;
+    grid-row: 5;
+    border: solid;
+    border-color: var(--lightblue);
+    background-image:url(./Wood.png) ;
+  }  
+  .calculator:hover{
+    filter: drop-shadow(16px 16px 20px red) invert(75%);
+  }
+  
+  .image-overlay3 {
+    position: absolute;
+    z-index: 2;
+    top: 1em;
+    left: 0;
+    background-color: var(--lightblue);
+    color: var(--darkblue);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+  }
+  
+  .pastel-puzzels {
+    grid-column: 2;
+    grid-row: 6;
+    border: solid;
+    border-color: var(--lightblue);
+    background-image:url(./Stone.png) ;
+  }
+  .pastel-puzzels:hover {
+    filter: drop-shadow(16px 16px 20px red) invert(75%);
+  }
+  
+  .image-overlay4 {
+    position: absolute;
+    z-index: 2;
+    top: 1em;
+    left: 0;
+    background-color: var(--lightblue);
+    color: var(--darkblue);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+  }
+  
+  .run-buddy {
+    grid-column: 3;
+    grid-row: 6;
+    border: solid;
+    border-color: var(--lightblue);
+    background-image:url(./Keys.png);
+  }
+  .run-buddy:hover {
+    filter: drop-shadow(16px 16px 20px red) invert(75%);
+  }
+  
+  .image-overlay5 {
+    position: absolute;
+    z-index: 2;
+    top: 1em;
+    left: 0;
+    background-color: var(--lightblue);
+    color: var(--darkblue);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+  }
+  /* grid images with links to first challenge on github with hover effect */
+  
+  .contact-me {
+    grid-column: 1;
+    grid-row: 7;
+    padding: 2%;
+    border-right-style: solid;
+    font-size: 40px;
+    text-align: right;
+  }
+  
+  .links {
+    display: flex;
+    grid-column: 2 / 4;
+    grid-row: 7;
+    padding: 8;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+  }
+  /* contact me links  */
+  
+  
+  @media screen and (max-width: 992px) {
+    header, main {
+      width: 100%;
+      flex-direction: column;
+    }
+    header {
+      height: 60px
+    }
+    .site-header {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    header, main {
+      width: 100%;
+    }
+    header {
+      height: 100px
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    header, main {
+      width: 100%;
+    }
+    header {
+      height: 100px
+    }
+  
+  }
+  
+  /* Added media screen functionality for readability on different devices */
